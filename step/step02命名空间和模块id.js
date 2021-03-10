@@ -1,18 +1,18 @@
 modules = {
   // index.js
-  1: function (require, exports) {
+  0: function (require, exports) {
     let action = require('./action.js').action
     let name = require('./name.js').name
     let msg = `${name} is ${action}`
     console.log(msg)
   },
   // action.js
-  2: function (require, exports) {
+  1: function (require, exports) {
     let action = 'make webpack'
     exports.action = action
   },
   // name.js
-  3: function (require, exports) {
+  2: function (require, exports) {
     let name = 'my name is xxx'
     exports.name = name
   }
